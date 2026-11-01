@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="description" content="Preview only. Combined Score OS homepage (Canvas design × swarm hero × Claude UX). Not the live scoresos.com homepage." />
+  <title>Score OS — Final Preview (Not Live)</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three.module.min.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="preview-ribbon" role="status">Preview only · not live scoresos.com · demo / illustrative data · CROA-safe</div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Score OS">
+      <img src="./media/logo.png" width="36" height="36" alt="" />
+      <span>Score OS</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#arsenal">Arsenal</a>
+      <a href="#scoreboard">Scoreboard</a>
+      <a href="#maxine">Maxine</a>
+      <a href="#funding">Funding</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">Info</a>
+      <a href="https://scoresos.com/login">Login</a>
+      <a class="nav-cta" href="https://checkout.square.site/merchant/MLGEBVXJC0JRS/checkout/6A2Q2LWRQHPQDXV3LPI3BSBZ">Get Started</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">THE OPERATING SYSTEM FOR CREDIT REPAIR AGENCIES</p>
+          <h1>The most powerful Credit Repair CRM you’ll ever experience.</h1>
+          <p class="subhead">Everything a credit repair agency needs to launch, run, and scale — in one platform. Stop duct-taping ten different subscriptions together. Score OS runs your entire operation, all under your brand.</p>
+          <div class="hero-cta">
+            <a class="btn gold" href="https://checkout.square.site/merchant/MLGEBVXJC0JRS/checkout/6A2Q2LWRQHPQDXV3LPI3BSBZ">Get Started — $199/mo</a>
+            <a class="btn ghost" href="https://scoresos.com/diy">DIY for $49.99/mo</a>
+          </div>
+          <p class="demo-note">Illustrative UI · sample scores labeled Demo · Score OS does not guarantee scores, deletions, approvals, or funding outcomes.</p>
+        </div>
+
+        <div class="hero-stage">
+          <div
+            class="swarm-slot"
+            id="wave-swarm-slot"
+            data-wave-slot="dot-swarm-hero"
+            aria-label="Interactive particle swarm hero"
+          >
+            <canvas id="swarm-canvas"></canvas>
+            <div class="corner-cards" aria-hidden="true">
+              <article class="glass-chip tl"><span class="chip gold">In review</span><strong>Dispute packet</strong><em>Demo · not a result</em></article>
+              <article class="glass-chip tr"><span class="chip green">Prepared</span><strong>Funding dossier</strong><em>Illustrative only</em></article>
+              <article class="glass-chip bl"><span class="chip gold">Tracked</span><strong>3-bureau round</strong><em>Sample UI</em></article>
+              <article class="glass-chip br"><span class="chip green">Ready</span><strong>Client portal</strong><em>White-label demo</em></article>
+            </div>
+            <p class="formation-chip" id="formation-tag">Demo · move your cursor through the swarm</p>
+            <p class="formation-label sr-only" id="formation-label">SCORE OS</p>
+          </div>
+
+          <aside class="proof-card glass reveal" aria-label="Illustrative scoreboard preview">
+            <div class="proof-head">
+              <span class="kicker-mini">PRODUCT PROOF</span>
+              <span class="demo-pill">Demo · not live bureau data</span>
+            </div>
+            <div class="gauges">
+              <div class="gauge" data-score="652">
+                <svg viewBox="0 0 96 96" aria-hidden="true">
+                  <circle class="track" cx="48" cy="48" r="38" />
+                  <circle class="prog" cx="48" cy="48" r="38" style="--p:0.72" />
+                </svg>
+                <div class="gauge-meta"><strong>652</strong><span>Equifax</span></div>
+              </div>
+              <div class="gauge featured" data-score="665">
+                <svg viewBox="0 0 96 96" aria-hidden="true">
+                  <circle class="track" cx="48" cy="48" r="38" />
+                  <circle class="prog" cx="48" cy="48" r="38" style="--p:0.76" />
+                </svg>
+                <div class="gauge-meta"><strong>665</strong><span>Experian</span></div>
+              </div>
+              <div class="gauge" data-score="639">
+                <svg viewBox="0 0 96 96" aria-hidden="true">
+                  <circle class="track" cx="48" cy="48" r="38" />
+                  <circle class="prog" cx="48" cy="48" r="38" style="--p:0.68" />
+                </svg>
+                <div class="gauge-meta"><strong>639</strong><span>TransUnion</span></div>
+              </div>
+            </div>
+            <div class="trend">
+              <div class="trend-label"><span>Sample score trend</span><span class="up">Illustrative climb</span></div>
+              <svg class="trend-svg" viewBox="0 0 280 64" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(47,212,106,0.45)" />
+                    <stop offset="100%" stop-color="rgba(47,212,106,0)" />
+                  </linearGradient>
+                </defs>
+                <path class="area" d="M0,52 C40,48 55,44 80,40 C110,34 130,38 160,28 C190,18 210,22 240,14 C260,10 270,8 280,6 L280,64 L0,64 Z" fill="url(#tg)" />
+                <path class="line" d="M0,52 C40,48 55,44 80,40 C110,34 130,38 160,28 C190,18 210,22 240,14 C260,10 270,8 280,6" />
+              </svg>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span>Scroll the playbook</span></div>
+    </section>
+
+    <section class="chips-row" aria-label="Feature names">
+      <div class="chips-track" id="chips-track"></div>
+    </section>
+
+    <section class="section elevated" id="scoreboard">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="kicker">THE SCOREBOARD</p>
+          <h2>Watch every score move in one place.</h2>
+          <p class="lead">Three bureaus. One live scoreboard. Your clients see progress rack up — and so do you. Numbers below are sample UI only.</p>
+        </header>
+        <div class="board-grid reveal">
+          <article class="board-card glass">
+            <p class="bureau">Equifax</p>
+            <p class="board-score">652</p>
+            <p class="board-meta"><span class="up">Sample climb</span> · Demo</p>
+          </article>
+          <article class="board-card glass featured">
+            <p class="bureau">Experian</p>
+            <p class="board-score">665</p>
+            <p class="board-meta"><span class="up">Sample climb</span> · Demo</p>
+          </article>
+          <article class="board-card glass">
+            <p class="bureau">TransUnion</p>
+            <p class="board-score">639</p>
+            <p class="board-meta"><span class="up">Sample climb</span> · Demo</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="arsenal" aria-labelledby="arsenal-title">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="kicker">THE ARSENAL</p>
+          <h2 id="arsenal-title">Everything you need to scale, in one playbook.</h2>
+          <p class="lead">Every tool you need to run offense, defense, and special teams — no duct-taped subscriptions, no missing plays.</p>
+        </header>
+        <div class="bento" id="bento-grid"></div>
+      </div>
+    </section>
+
+    <section class="section elevated" id="maxine">
+      <div class="section-inner maxine-grid">
+        <div class="maxine-copy reveal">
+          <p class="kicker">PROPRIETARY TECH</p>
+          <h2>Templates get rejected. Maxine is built to get results.</h2>
+          <p class="lead">Generic letters hit e-OSCAR auto-filters. Maxine is designed to analyze each negative item and draft unique, non-templated dispute letters with FCRA citations based on the finding.</p>
+          <ul class="check-list">
+            <li>Analyzes the specific negative item and account history</li>
+            <li>Drafts unique, tailored dispute letters</li>
+            <li>Cites FCRA violations based on the finding</li>
+            <li>Built to support careful, human-ready review workflows</li>
+          </ul>
+          <p class="demo-note">Capability language only — Score OS does not guarantee deletions, score changes, or bureau outcomes.</p>
+        </div>
+        <div class="maxine-card glass reveal" aria-hidden="true">
+          <div class="maxine-card-top">
+            <span class="avatar">M</span>
+            <div>
+              <strong>Maxine</strong>
+              <em>AI Dispute Engine · Demo</em>
+            </div>
+          </div>
+          <div class="letter-preview">
+            <p class="lp-label">Draft letter · illustrative</p>
+            <p>Re: Account ending ••4831 — requesting investigation under FCRA §611…</p>
+            <p class="lp-muted">Unique wording generated per item · sample UI</p>
+          </div>
+          <div class="maxine-tags">
+            <span>Unique draft</span>
+            <span>FCRA cite</span>
+            <span>Queue ready</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="kicker">HOW IT WORKS</p>
+          <h2>From lead to letter without the duct tape.</h2>
+        </header>
+        <ol class="steps reveal">
+          <li><span class="step-num">01</span><strong>Launch under your brand</strong><p>White-label portal, CRM, and site — clients see you, not us.</p></li>
+          <li><span class="step-num">02</span><strong>Monitor all 3 bureaus</strong><p>Track disputes and scores on one scoreboard instead of spreadsheets.</p></li>
+          <li><span class="step-num">03</span><strong>Draft with Maxine</strong><p>AI reads the report and prepares unique dispute letters for your review.</p></li>
+          <li><span class="step-num">04</span><strong>Automate the busywork</strong><p>Follow-ups, progress updates, and reminders run on autopilot.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section band" id="brand">
+      <div class="section-inner brand-row reveal">
+        <div>
+          <p class="kicker">CLIENT EXPERIENCE</p>
+          <h2>Your brand. Not ours.</h2>
+          <p class="lead">When clients check scores or messages, they see your logo, your colors, and your agency’s name. You own the relationship; Score OS powers it.</p>
+        </div>
+        <div class="brand-mock glass">
+          <div class="bm-bar"><span class="bm-dot"></span><span class="bm-dot"></span><span class="bm-dot"></span><span class="bm-title">Your Agency Portal · Example</span></div>
+          <div class="bm-body">
+            <div class="bm-logo">YA</div>
+            <div>
+              <strong>Welcome back, Alex</strong>
+              <em>Example client view · not a real account</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section funding" id="funding">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="kicker">BUILT TO FUND</p>
+          <h2>Organize the story lenders ask for.</h2>
+          <p class="lead">Score OS helps agencies assemble client dossiers and track readiness signals. No funding is promised — outcomes depend on the client, the lender, and underwriting.</p>
+        </header>
+        <div class="funding-grid reveal">
+          <div class="skyline" id="skyline" aria-label="Illustrative capital skyline">
+            <span class="sky-col" style="--h:38%"></span>
+            <span class="sky-col" style="--h:55%"></span>
+            <span class="sky-col" style="--h:42%"></span>
+            <span class="sky-col" style="--h:72%"></span>
+            <span class="sky-col" style="--h:48%"></span>
+            <span class="sky-col" style="--h:88%"></span>
+            <span class="sky-col" style="--h:60%"></span>
+            <span class="sky-col" style="--h:78%"></span>
+          </div>
+          <aside class="readiness glass">
+            <p class="kicker-mini">SAMPLE READINESS · DEMO</p>
+            <div class="signal"><span>Docs gathered</span><span class="state ok">READY</span><div class="meter"><span style="--w:0.92"></span></div></div>
+            <div class="signal"><span>Bureau round tracked</span><span class="state ok">TRACKED</span><div class="meter"><span style="--w:0.78"></span></div></div>
+            <div class="signal"><span>Funding dossier</span><span class="state mid">IN REVIEW</span><div class="meter"><span style="--w:0.54"></span></div></div>
+            <p class="demo-note" style="margin-top:14px">Illustrative UI only — not an offer of credit or a funding guarantee.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section elevated" id="pricing" aria-labelledby="pricing-title">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="kicker">PRICING</p>
+          <h2 id="pricing-title">Simple pricing. Infinite scale.</h2>
+          <p class="lead">No hidden fees, no per-client charges. Run an agency — or repair your own credit.</p>
+        </header>
+        <div class="pricing-grid reveal">
+          <div class="plan-wrap">
+            <article class="price-card featured">
+              <span class="badge-pop">Most popular</span>
+              <p class="plan">Agency OS</p>
+              <p class="price"><span>$199</span>/mo</p>
+              <p class="plan-note">Cancel anytime. No long-term contracts.</p>
+              <ul>
+                <li>Unlimited Active Clients</li>
+                <li>Unlimited AI Dispute Letters (Maxine)</li>
+                <li>All 3 Bureaus Tracked</li>
+                <li>Fully White-Labeled Client Portal</li>
+                <li>Built-in Client Messaging</li>
+                <li>Automated Monthly Progress Reports</li>
+              </ul>
+              <a class="btn gold block" href="https://checkout.square.site/merchant/MLGEBVXJC0JRS/checkout/6A2Q2LWRQHPQDXV3LPI3BSBZ">Subscribe Now — $199/mo</a>
+            </article>
+          </div>
+          <article class="price-card glass">
+            <p class="plan">DIY OS</p>
+            <p class="price"><span>$49.99</span>/mo</p>
+            <p class="plan-note">For individuals repairing their own credit — no agency needed.</p>
+            <ul>
+              <li>Your Own Secure Credit Portal</li>
+              <li>AI Credit Audit &amp; Action Plan</li>
+              <li>Unlimited AI Dispute Letters (Maxine)</li>
+              <li>All 3 Bureaus Tracked</li>
+              <li>Secure ID &amp; Document Uploads</li>
+              <li>Score Progress Tracking</li>
+            </ul>
+            <a class="btn ghost block" href="https://checkout.square.site/merchant/MLGEBVXJC0JRS/checkout/VROSXIVQX2GK6ISB4BMCE237">Start DIY — $49.99/mo</a>
+            <p class="already">Or visit <a href="https://scoresos.com/diy">scoresos.com/diy</a></p>
+          </article>
+        </div>
+        <p class="already center">Already paid? <a href="https://scoresos.com/login">Sign up with your access code</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-inner narrow">
+        <header class="section-head reveal">
+          <p class="kicker">FAQ</p>
+          <h2>Straight answers.</h2>
+        </header>
+        <div class="faq-list reveal">
+          <details open>
+            <summary>Is this the live scoresos.com homepage?</summary>
+            <p>No. This is a preview-only concept for review. Production DNS and the live site are untouched.</p>
+          </details>
+          <details>
+            <summary>Do you guarantee score increases or deletions?</summary>
+            <p>No. Score OS provides tools for monitoring, disputes, and agency operations. Outcomes are never guaranteed. Demo numbers on this page are illustrative only.</p>
+          </details>
+          <details>
+            <summary>What’s included in Agency OS at $199/mo?</summary>
+            <p>Unlimited active clients, unlimited Maxine AI dispute letters, 3-bureau tracking, white-labeled client portal, messaging, and automated monthly progress reports — cancel anytime.</p>
+          </details>
+          <details>
+            <summary>Can clients see my branding?</summary>
+            <p>Yes. The white-label portal uses your logo, colors, and agency name so you own the client relationship.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band" id="cta">
+      <div class="cta-box reveal">
+        <h2>Ready to build a championship agency?</h2>
+        <p class="lead">Get started with Agency OS, or run DIY OS on your own credit.</p>
+        <div class="hero-cta center">
+          <a class="btn gold" href="https://checkout.square.site/merchant/MLGEBVXJC0JRS/checkout/6A2Q2LWRQHPQDXV3LPI3BSBZ">Get Started — $199/mo</a>
+          <a class="btn ghost" href="https://scoresos.com/diy">Do It Yourself — $49.99/mo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="brand">
+        <img src="./media/logo.png" width="28" height="28" alt="" />
+        <span>Score OS</span>
+      </div>
+      <p class="legal">Educational / informational only; not legal advice; no attorney-client relationship. Score OS does not provide legal representation and does not guarantee any credit score, deletion, approval, or funding outcome. Users must comply with applicable law including CROA. Demo data on this preview is illustrative.</p>
+      <p class="footer-meta">Final combined preview · Canvas design · Wave swarm · Claude UX accents · Contact on live site: admin@scoresos.com · (302) 273-0607</p>
+      <div class="footer-links">
+        <a href="https://scoresos.com/privacy">Privacy</a>
+        <a href="https://scoresos.com/terms">Terms</a>
+        <a href="https://scoresos.com/login">Login</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./shell.js"></script>
+  <script type="module" src="./swarm.js"></script>
+</body>
+</html>
